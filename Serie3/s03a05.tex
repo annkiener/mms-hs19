@@ -1,0 +1,44 @@
+Der Benutzer möchte eine Datei auf seinem Schreibtisch umbennen. Wir nehmen an,
+dass dieser Benutzer ein macOS System verwendet. Wir verwenden
+das Interaktionsmodell von Norman um diesen Ablauf zu analysieren:
+
+\begin{itemize}
+  \item Ziel: Umbennen der Datei Untitled.txt zu Titled.txt
+  \item Planen: Die Datei mit dem Namen Untitled.txt werde ich umbennen zu
+    Titled.txt.
+  \item Spezifizieren: 
+    \begin{enumerate}
+      \item Terminal öffnen
+      \item Zum Schreibtisch wechseln: 'cd Desktop'
+      \item Verfizieren, dass Datei vorhanden ist: 'ls -lah | grep
+        Unititled.txt'
+      \item Datei umbennen: 'mv Untitled.txt Titled.txt'
+      \item Verfizieren, dass Datei umbennent wurde: 'ls -lah | grep Titled.txt'
+    \end{enumerate}
+  \item Ausführen:
+    \begin{enumerate}
+      \item Terminal öffnen
+      \item Zum Schreibtisch wechseln: 'cd Desktop'
+      \item Verfizieren, dass Datei vorhanden ist: 'ls -lah | grep
+        Unititled.txt'
+      \item Datei umbennen: 'mv Untitled.txt Titled.txt'
+      \item Verfizieren, dass Datei umbennent wurde: 'ls -lah | grep Titled.txt'
+    \end{enumerate}
+  \item Wahrnehmen: Die Datei Untitled.txt ist auf dem Schreibtisch nicht mehr
+    vorhanden und neu gibt es eine Datei Titled.txt
+  \item Interpretieren: Der "Name" der Datei wurde geändert.
+  \item Vergleich: Befindet sich eine Datei namens Titled.txt auf dem
+    Schreibtisch? 
+\end{itemize}
+
+Bei dieser Umsetztung ist die \textit{Gulf of execution} für einen Unerfahrenen
+Benutzer sehr hoch, da Textinterfaces zu Beginn sehr wenig \textit{Affordance}
+und \textit{Signifiers} liefern. Hingegen hat die Interaktion via Terminal
+relativ grosse \textit{Contrains} und führt zu einem guten Konzeptmodell.
+
+Die \textit{Guld of evalutaion} ist relativ gering, mit wenig Mühe z.B. dem
+Command 'ls -lah | grep Titled.txt' oder noch einfacher dem Blick auf das
+Schreibtisch GUI, kann der Benutzer verfizieren, dass die Datei tatsächlich
+umbennent wurde. 
+    
+
