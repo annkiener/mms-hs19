@@ -1,25 +1,48 @@
-use case: alle termine von tag/woche/monat übersichtlich dargestellt
-grundsatz: einsehbarkeit
-messmethode: 
-ist: nur monatlich
-schlecht: entweder nur monat tag oder woche
-geplant: switche/auswählen zwischen
-best: freie wahl
-
-grundsatz: berechtigung
-use case: nur diese personen 
-
 \begin{table}[h!]
     \centering
-      \begin{tabular}{||p{5cm}|p{5cm}||} 
-     \hline
-              & Einsehbarkeit & \textbf{Grundsatz}  \\ 
-     \hline
-    
-        & & \\
-    
-     \hline
+    \begin{tabular}{|l|l|}
+        \hline
+      \textbf{Grundsatz}  & Wiederherstellung \\
+      \hline
+      \textbf{Use Case}           & Einen falsch eingetragenen Termin wieder löschen  \\
+      
+      \textbf{Messmethode}     &     Anzahl wie oft das Interface den User irreführt         \\
+      
+      \textbf{Ist-Level}        &      Der User braucht vier Anläufe um den Termin zu löschen     \\
+      
+      \textbf{Schlechtester Fall}    &   Der User braucht drei Anläufe um den Termin zu löschen       \\
+      
+      \textbf{Geplantes Level}     &      Der User braucht zwei Anläufe um den Termin zu löschen        \\
+      
+      \textbf{Bester Fall}           &     Der User braucht einen Anlauf um den Termin zu löschen        \\
+      \hline
     \end{tabular}
-    \caption{}
-    \label{table:1}
-    \end{table}
+
+    \caption{Beispiel: Wiederherstellung}
+    \label{tbl:wiederherstellung}
+
+  \end{table}
+
+\begin{table}[h!]
+    \begin{tabular}{|l|l|}
+        \hline
+      \textbf{Grundsatz}  & Einsehbarkeit \\
+      \hline
+      \textbf{Use Case}           &    Alle Termine des Tages/der Woche/des Monats können vom User übersichtlich eingesehen werden \\
+      
+      \textbf{Messmethode}     &       Anzahl der Versuche die ein User braucht um seine gewünschte Übersicht zu erhalten       \\
+      
+      \textbf{Ist-Level}        &      Der User braucht vier Anläufe um seine gewünschte Einsicht zu haben       \\
+      
+      \textbf{Schlechtester Fall}    &       Der User braucht drei Anläufe um seine gewünschte Einsicht zu haben      \\
+      
+      \textbf{Geplantes Level}     &       Der User braucht zwei Anläufe um seine gewünschte Einsicht zu haben        \\
+      
+      \textbf{Bester Fall}           &      Der User braucht einen Anlauf um seine gewünschte Einsicht zu haben      \\
+      \hline
+    \end{tabular}
+
+    \caption{Beispiel: Einsehbarkeit}
+    \label{tbl:einsehbarkeit}
+
+  \end{table}
